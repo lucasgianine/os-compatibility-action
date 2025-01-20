@@ -12,13 +12,14 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-        - name: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-        - name: Executar a Action no ${{ matrix.os }}
-            uses: ./
-            id: test
-            with:
-                # username: 'Lucas'
+      - name: Executar a Action no ${{ matrix.os }}
+        uses: ./
+        id: test
+        # with:
+          # username: 'Lucas'
 
       - name: Validar Saída da Action
-        run: echo "Saída: ${{ steps.test.outputs.greeting }}"
+        run: |
+          echo "Saída: ${{ steps.test.outputs.greeting }}"
