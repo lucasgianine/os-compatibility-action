@@ -1,0 +1,13 @@
+name: 'OS Compatibility Test (OSCT) v0.1'
+author: '@lucasgianine'
+description: 'Testando compatibilidade de sistemas operacionais.'
+inputs:
+  username:
+    description: 'Nome de usuário'
+    required: true
+outputs:
+  greeting:
+    description: 'Mensagem final'
+runs:
+  using: 'node16'
+  main: 'src/index.ts'
