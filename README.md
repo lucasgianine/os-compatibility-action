@@ -19,7 +19,7 @@ outputs:
     description: 'Output action description'
 runs:
   using: 'node16' # Interpretador usado
-  main: 'src/index.ts' # localização da sua função
+  main: 'src/index.js' # localização da sua função
 ```
 
 Após a configuração, você pode criar uma função para sua action, seja ela `Javascript`, `Python`, `Java`, etc.

@@ -10,4 +10,4 @@ outputs:
     description: 'Mensagem final'
 runs:
   using: 'node16'
-  main: 'src/index.ts'
+  main: 'src/index.js'
